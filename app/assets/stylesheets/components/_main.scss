@@ -1,0 +1,32 @@
+.title a {
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    color: black;
+
+}
+.title {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.text {
+    text-align: left;
+    padding-top: 150px;
+    padding-right: 200px;
+    padding-bottom: 200px;
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    color: white;
+}
+
+.main-page {
+  width: 100vw;
+
+}

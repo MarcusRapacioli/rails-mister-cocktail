@@ -1,0 +1,39 @@
+body { margin: 0; padding: 0; }
+
+#blurred-image-container {
+    display:block;
+    padding:0;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+.img-src {
+    position: absolute;
+    background:url('https://images.unsplash.com/photo-1485899746080-bca038f6e593?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=747eadc189fd82e6e0926393391093cd&auto=format&fit=crop&w=1500&q=80') center center;
+    background-size: cover;
+    top: -10%;
+    bottom: 10%;
+    left: -10%;
+    right: 10%;
+    width:120%;
+    height:120%;
+}
+
+.img-src.blurred-image {
+    opacity:0;
+    -webkit-filter: blur(20px) brightness(0.7);
+    -ms-filter: blur(20px) brightness(0.7);
+    -o-filter: blur(20px) brightness(0.7);
+    filter: blur(20px) brightness(0.7);
+}
+
+.content {
+    padding:150px 50px;
+    color:#fff;
+    text-align:center;
+}
+

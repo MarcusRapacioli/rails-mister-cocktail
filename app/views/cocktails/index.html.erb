@@ -4,8 +4,8 @@
   <div class="container title">
           <% @cocktails.each do |cocktail| %>
     <div class="card">
-
-          <%= link_to "#{cocktail.name}", cocktail_path(cocktail) %>
+          <% icocktail = cocktail.name %>
+          <%= link_to "#{icocktail.capitalize}.", cocktail_path(cocktail) %>
     </div>
           <% end %>
   </div>
